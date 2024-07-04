@@ -1,0 +1,1207 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* btspeechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* btspeechTests.m */; };
+		1013A5E48A4CB83EBF3A64FC /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EFFD02B5C23542733F486D /* ExpoModulesProvider.swift */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		63EAE77EA2E284828FC4252D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777F66D208ED80C7428B25E /* ExpoModulesProvider.swift */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8E8DD5F82AEAFF3000F2E3B8 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8E8DD5F72AEAFF3000F2E3B8 /* Config.xcconfig */; };
+		A6BC361DAEF2FD2ECFD6499B /* Pods_btspeech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 144AFCFC174E98A210B182B4 /* Pods_btspeech.framework */; };
+		AD4D28FFA8D7E5FC11083FBF /* Pods_btspeech_btspeechTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73017058FDFB90005C818915 /* Pods_btspeech_btspeechTests.framework */; };
+		B64824942AE5307E00048593 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B64824932AE5307300048593 /* libopus.a */; };
+		B66830D02AE0951C006D3AE7 /* RCTOpusToWav.mm in Sources */ = {isa = PBXBuildFile; fileRef = B66830CF2AE0951C006D3AE7 /* RCTOpusToWav.mm */; };
+		B66830D12AE0951C006D3AE7 /* RCTOpusToWav.mm in Sources */ = {isa = PBXBuildFile; fileRef = B66830CF2AE0951C006D3AE7 /* RCTOpusToWav.mm */; };
+		B66830ED2AE24B81006D3AE7 /* RCTPcmToOpus.mm in Sources */ = {isa = PBXBuildFile; fileRef = B66830EC2AE24B81006D3AE7 /* RCTPcmToOpus.mm */; };
+		B66830EE2AE24B81006D3AE7 /* RCTPcmToOpus.mm in Sources */ = {isa = PBXBuildFile; fileRef = B66830EC2AE24B81006D3AE7 /* RCTPcmToOpus.mm */; };
+		B66830F12AE25987006D3AE7 /* OpusCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66830EF2AE25987006D3AE7 /* OpusCodec.cpp */; };
+		B66830F22AE25987006D3AE7 /* OpusCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66830EF2AE25987006D3AE7 /* OpusCodec.cpp */; };
+		B66A81062AED3C860046F2CB /* IirFilterDesignFisher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F02AED3C850046F2CB /* IirFilterDesignFisher.cpp */; };
+		B66A81072AED3C860046F2CB /* IirFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F12AED3C850046F2CB /* IirFilter.h */; };
+		B66A81082AED3C860046F2CB /* VoiceActivityDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F22AED3C850046F2CB /* VoiceActivityDetection.cpp */; };
+		B66A81092AED3C860046F2CB /* IirFilterDesignFisher.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F32AED3C850046F2CB /* IirFilterDesignFisher.h */; };
+		B66A810A2AED3C860046F2CB /* IirFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F42AED3C850046F2CB /* IirFilter.cpp */; };
+		B66A810B2AED3C860046F2CB /* PolesAndZeros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F52AED3C850046F2CB /* PolesAndZeros.cpp */; };
+		B66A810C2AED3C860046F2CB /* Complex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F62AED3C850046F2CB /* Complex.cpp */; };
+		B66A810D2AED3C860046F2CB /* VoiceActivityDetection.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F72AED3C850046F2CB /* VoiceActivityDetection.h */; };
+		B66A810E2AED3C860046F2CB /* EnvelopeDetector.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F82AED3C850046F2CB /* EnvelopeDetector.h */; };
+		B66A810F2AED3C860046F2CB /* PolynomialUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80F92AED3C850046F2CB /* PolynomialUtils.h */; };
+		B66A81102AED3C860046F2CB /* IirFilterCoefficients.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80FA2AED3C850046F2CB /* IirFilterCoefficients.h */; };
+		B66A81112AED3C860046F2CB /* PolynomialUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A80FB2AED3C850046F2CB /* PolynomialUtils.cpp */; };
+		B66A81122AED3C860046F2CB /* IntArray.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80FC2AED3C850046F2CB /* IntArray.h */; };
+		B66A81132AED3C860046F2CB /* Complex.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80FD2AED3C850046F2CB /* Complex.h */; };
+		B66A81142AED3C860046F2CB /* Enumerations.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80FE2AED3C850046F2CB /* Enumerations.h */; };
+		B66A81152AED3C860046F2CB /* ArrayUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A80FF2AED3C850046F2CB /* ArrayUtils.h */; };
+		B66A81162AED3C860046F2CB /* ActivityDetector.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A81002AED3C850046F2CB /* ActivityDetector.h */; };
+		B66A81172AED3C860046F2CB /* EnvelopeDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A81012AED3C850046F2CB /* EnvelopeDetector.cpp */; };
+		B66A81182AED3C860046F2CB /* ArrayUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A81022AED3C850046F2CB /* ArrayUtils.cpp */; };
+		B66A81192AED3C860046F2CB /* IntArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A81032AED3C850046F2CB /* IntArray.cpp */; };
+		B66A811A2AED3C860046F2CB /* PolesAndZeros.h in Sources */ = {isa = PBXBuildFile; fileRef = B66A81042AED3C850046F2CB /* PolesAndZeros.h */; };
+		B66A811B2AED3C860046F2CB /* ActivityDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B66A81052AED3C860046F2CB /* ActivityDetector.cpp */; };
+		B6766FFD2AFFA24E001B8D3E /* DetectVoiceActivityUseCase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FD12AFFA24E001B8D3E /* DetectVoiceActivityUseCase.cpp */; };
+		B6766FFE2AFFA24E001B8D3E /* fvad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FDA2AFFA24E001B8D3E /* fvad.cpp */; };
+		B6766FFF2AFFA24E001B8D3E /* resample_48khz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FDD2AFFA24E001B8D3E /* resample_48khz.cpp */; };
+		B67670002AFFA24E001B8D3E /* resample_fractional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FDF2AFFA24E001B8D3E /* resample_fractional.cpp */; };
+		B67670012AFFA24E001B8D3E /* division_operations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FE12AFFA24E001B8D3E /* division_operations.cpp */; };
+		B67670022AFFA24E001B8D3E /* energy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FE32AFFA24E001B8D3E /* energy.cpp */; };
+		B67670032AFFA24E001B8D3E /* spl_inl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FE42AFFA24E001B8D3E /* spl_inl.cpp */; };
+		B67670042AFFA24E001B8D3E /* get_scaling_square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FE52AFFA24E001B8D3E /* get_scaling_square.cpp */; };
+		B67670052AFFA24E001B8D3E /* resample_by_2_internal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FE62AFFA24E001B8D3E /* resample_by_2_internal.cpp */; };
+		B67670062AFFA24E001B8D3E /* vad_core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FE92AFFA24E001B8D3E /* vad_core.cpp */; };
+		B67670072AFFA24E001B8D3E /* vad_gmm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FEB2AFFA24E001B8D3E /* vad_gmm.cpp */; };
+		B67670082AFFA24E001B8D3E /* vad_sp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FED2AFFA24E001B8D3E /* vad_sp.cpp */; };
+		B67670092AFFA24E001B8D3E /* vad_filterbank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FEF2AFFA24E001B8D3E /* vad_filterbank.cpp */; };
+		B676700A2AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithLibfVad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FF02AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithLibfVad.cpp */; };
+		B676700B2AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithOpusVad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FF32AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithOpusVad.cpp */; };
+		B676700C2AFFA24E001B8D3E /* VoiceActivity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6766FF72AFFA24E001B8D3E /* VoiceActivity.cpp */; };
+		B6B4A0752AE40BE800532C0F /* RCTOpusCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6B4A0742AE40BE800532C0F /* RCTOpusCodec.mm */; };
+		B6B4A0762AE40BE800532C0F /* RCTOpusCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6B4A0742AE40BE800532C0F /* RCTOpusCodec.mm */; };
+		B6B4A0872AE430D600532C0F /* RCTAudioDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6B4A0862AE430D600532C0F /* RCTAudioDetection.mm */; };
+		B6B4A0882AE430D600532C0F /* RCTAudioDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = B6B4A0862AE430D600532C0F /* RCTAudioDetection.mm */; };
+		E6AEFBFC2AAF477F003F2785 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6AEFBFB2AAF477E003F2785 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = btspeech;
+		};
+		B64824922AE5307300048593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B648248A2AE5307300048593 /* Opus.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1472F25AD7CC40CB9C086421;
+			remoteInfo = opus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* btspeechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = btspeechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* btspeechTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = btspeechTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* btspeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = btspeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = btspeech/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = btspeech/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = btspeech/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = btspeech/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = btspeech/main.m; sourceTree = "<group>"; };
+		144AFCFC174E98A210B182B4 /* Pods_btspeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btspeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40EFFD02B5C23542733F486D /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-btspeech/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		49D188B73A021AAEEC85680E /* Pods-btspeech-btspeechTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btspeech-btspeechTests.debug.xcconfig"; path = "Target Support Files/Pods-btspeech-btspeechTests/Pods-btspeech-btspeechTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6107C12DEF0150327F58CDE4 /* Pods-btspeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btspeech.debug.xcconfig"; path = "Target Support Files/Pods-btspeech/Pods-btspeech.debug.xcconfig"; sourceTree = "<group>"; };
+		73017058FDFB90005C818915 /* Pods_btspeech_btspeechTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_btspeech_btspeechTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = btspeech/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E5B43582AE278C2001E1035 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "libs/Debug-iphoneos/libopus.a"; sourceTree = "<group>"; };
+		8E5B435A2AE27AD2001E1035 /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
+		8E8DD5F72AEAFF3000F2E3B8 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		B648248A2AE5307300048593 /* Opus.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Opus.xcodeproj; path = opus/_build/Opus.xcodeproj; sourceTree = "<group>"; };
+		B66830C62AE08D37006D3AE7 /* RCTPcmToOpus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTPcmToOpus.h; sourceTree = "<group>"; };
+		B66830CE2AE094D0006D3AE7 /* RCTOpusToWav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTOpusToWav.h; sourceTree = "<group>"; };
+		B66830CF2AE0951C006D3AE7 /* RCTOpusToWav.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RCTOpusToWav.mm; sourceTree = "<group>"; };
+		B66830EC2AE24B81006D3AE7 /* RCTPcmToOpus.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RCTPcmToOpus.mm; sourceTree = "<group>"; };
+		B66830EF2AE25987006D3AE7 /* OpusCodec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OpusCodec.cpp; sourceTree = "<group>"; };
+		B66830F02AE25987006D3AE7 /* OpusCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpusCodec.h; sourceTree = "<group>"; };
+		B66830F62AE25B30006D3AE7 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopus.a; path = "libs/Debug-iphoneos/libopus.a"; sourceTree = "<group>"; };
+		B66A80F02AED3C850046F2CB /* IirFilterDesignFisher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IirFilterDesignFisher.cpp; sourceTree = "<group>"; };
+		B66A80F12AED3C850046F2CB /* IirFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IirFilter.h; sourceTree = "<group>"; };
+		B66A80F22AED3C850046F2CB /* VoiceActivityDetection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceActivityDetection.cpp; sourceTree = "<group>"; };
+		B66A80F32AED3C850046F2CB /* IirFilterDesignFisher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IirFilterDesignFisher.h; sourceTree = "<group>"; };
+		B66A80F42AED3C850046F2CB /* IirFilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IirFilter.cpp; sourceTree = "<group>"; };
+		B66A80F52AED3C850046F2CB /* PolesAndZeros.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PolesAndZeros.cpp; sourceTree = "<group>"; };
+		B66A80F62AED3C850046F2CB /* Complex.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Complex.cpp; sourceTree = "<group>"; };
+		B66A80F72AED3C850046F2CB /* VoiceActivityDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceActivityDetection.h; sourceTree = "<group>"; };
+		B66A80F82AED3C850046F2CB /* EnvelopeDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvelopeDetector.h; sourceTree = "<group>"; };
+		B66A80F92AED3C850046F2CB /* PolynomialUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolynomialUtils.h; sourceTree = "<group>"; };
+		B66A80FA2AED3C850046F2CB /* IirFilterCoefficients.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IirFilterCoefficients.h; sourceTree = "<group>"; };
+		B66A80FB2AED3C850046F2CB /* PolynomialUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PolynomialUtils.cpp; sourceTree = "<group>"; };
+		B66A80FC2AED3C850046F2CB /* IntArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntArray.h; sourceTree = "<group>"; };
+		B66A80FD2AED3C850046F2CB /* Complex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		B66A80FE2AED3C850046F2CB /* Enumerations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enumerations.h; sourceTree = "<group>"; };
+		B66A80FF2AED3C850046F2CB /* ArrayUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrayUtils.h; sourceTree = "<group>"; };
+		B66A81002AED3C850046F2CB /* ActivityDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityDetector.h; sourceTree = "<group>"; };
+		B66A81012AED3C850046F2CB /* EnvelopeDetector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EnvelopeDetector.cpp; sourceTree = "<group>"; };
+		B66A81022AED3C850046F2CB /* ArrayUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayUtils.cpp; sourceTree = "<group>"; };
+		B66A81032AED3C850046F2CB /* IntArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntArray.cpp; sourceTree = "<group>"; };
+		B66A81042AED3C850046F2CB /* PolesAndZeros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolesAndZeros.h; sourceTree = "<group>"; };
+		B66A81052AED3C860046F2CB /* ActivityDetector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ActivityDetector.cpp; sourceTree = "<group>"; };
+		B6766FD12AFFA24E001B8D3E /* DetectVoiceActivityUseCase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetectVoiceActivityUseCase.cpp; sourceTree = "<group>"; };
+		B6766FD22AFFA24E001B8D3E /* DetectVoiceActivityUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectVoiceActivityUseCase.h; sourceTree = "<group>"; };
+		B6766FD52AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithLibfVad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectVoiceActivityDomainServiceWithLibfVad.h; sourceTree = "<group>"; };
+		B6766FD82AFFA24E001B8D3E /* fvad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fvad.h; sourceTree = "<group>"; };
+		B6766FDA2AFFA24E001B8D3E /* fvad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fvad.cpp; sourceTree = "<group>"; };
+		B6766FDB2AFFA24E001B8D3E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		B6766FDD2AFFA24E001B8D3E /* resample_48khz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resample_48khz.cpp; sourceTree = "<group>"; };
+		B6766FDE2AFFA24E001B8D3E /* signal_processing_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signal_processing_library.h; sourceTree = "<group>"; };
+		B6766FDF2AFFA24E001B8D3E /* resample_fractional.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resample_fractional.cpp; sourceTree = "<group>"; };
+		B6766FE02AFFA24E001B8D3E /* spl_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spl_inl.h; sourceTree = "<group>"; };
+		B6766FE12AFFA24E001B8D3E /* division_operations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = division_operations.cpp; sourceTree = "<group>"; };
+		B6766FE22AFFA24E001B8D3E /* resample_by_2_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resample_by_2_internal.h; sourceTree = "<group>"; };
+		B6766FE32AFFA24E001B8D3E /* energy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = energy.cpp; sourceTree = "<group>"; };
+		B6766FE42AFFA24E001B8D3E /* spl_inl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spl_inl.cpp; sourceTree = "<group>"; };
+		B6766FE52AFFA24E001B8D3E /* get_scaling_square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = get_scaling_square.cpp; sourceTree = "<group>"; };
+		B6766FE62AFFA24E001B8D3E /* resample_by_2_internal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resample_by_2_internal.cpp; sourceTree = "<group>"; };
+		B6766FE82AFFA24E001B8D3E /* vad_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_core.h; sourceTree = "<group>"; };
+		B6766FE92AFFA24E001B8D3E /* vad_core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vad_core.cpp; sourceTree = "<group>"; };
+		B6766FEA2AFFA24E001B8D3E /* vad_gmm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_gmm.h; sourceTree = "<group>"; };
+		B6766FEB2AFFA24E001B8D3E /* vad_gmm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vad_gmm.cpp; sourceTree = "<group>"; };
+		B6766FEC2AFFA24E001B8D3E /* vad_sp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_sp.h; sourceTree = "<group>"; };
+		B6766FED2AFFA24E001B8D3E /* vad_sp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vad_sp.cpp; sourceTree = "<group>"; };
+		B6766FEE2AFFA24E001B8D3E /* vad_filterbank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vad_filterbank.h; sourceTree = "<group>"; };
+		B6766FEF2AFFA24E001B8D3E /* vad_filterbank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vad_filterbank.cpp; sourceTree = "<group>"; };
+		B6766FF02AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithLibfVad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetectVoiceActivityDomainServiceWithLibfVad.cpp; sourceTree = "<group>"; };
+		B6766FF22AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithOpusVad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectVoiceActivityDomainServiceWithOpusVad.h; sourceTree = "<group>"; };
+		B6766FF32AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithOpusVad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetectVoiceActivityDomainServiceWithOpusVad.cpp; sourceTree = "<group>"; };
+		B6766FF52AFFA24E001B8D3E /* DetectVoiceActivityDomainService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectVoiceActivityDomainService.h; sourceTree = "<group>"; };
+		B6766FF62AFFA24E001B8D3E /* VoiceActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceActivity.h; sourceTree = "<group>"; };
+		B6766FF72AFFA24E001B8D3E /* VoiceActivity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceActivity.cpp; sourceTree = "<group>"; };
+		B6B4A0742AE40BE800532C0F /* RCTOpusCodec.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RCTOpusCodec.mm; sourceTree = "<group>"; };
+		B6B4A0772AE40BF600532C0F /* RCTOpusCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTOpusCodec.h; sourceTree = "<group>"; };
+		B6B4A0862AE430D600532C0F /* RCTAudioDetection.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = RCTAudioDetection.mm; sourceTree = "<group>"; };
+		B6B4A08E2AE430E000532C0F /* RCTAudioDetection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTAudioDetection.h; sourceTree = "<group>"; };
+		B777F66D208ED80C7428B25E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-btspeech-btspeechTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		D8760E582B58BC0C55F882D7 /* Pods-btspeech-btspeechTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btspeech-btspeechTests.release.xcconfig"; path = "Target Support Files/Pods-btspeech-btspeechTests/Pods-btspeech-btspeechTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6A7C8202A9BCD97009B09CF /* btspeech.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = btspeech.entitlements; path = btspeech/btspeech.entitlements; sourceTree = "<group>"; };
+		E6AEFBFB2AAF477E003F2785 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FC38B46FCA9DDFCF5457E7C5 /* Pods-btspeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-btspeech.release.xcconfig"; path = "Target Support Files/Pods-btspeech/Pods-btspeech.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4D28FFA8D7E5FC11083FBF /* Pods_btspeech_btspeechTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B64824942AE5307E00048593 /* libopus.a in Frameworks */,
+				A6BC361DAEF2FD2ECFD6499B /* Pods_btspeech.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* btspeechTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* btspeechTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = btspeechTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* btspeech */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FCF2AFFA24E001B8D3E /* voice-activity-detection */,
+				B66A811C2AED3CEF0046F2CB /* vad */,
+				B66830F42AE25A59006D3AE7 /* opus */,
+				E6AEFBFB2AAF477E003F2785 /* GoogleService-Info.plist */,
+				E6A7C8202A9BCD97009B09CF /* btspeech.entitlements */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				B66830C62AE08D37006D3AE7 /* RCTPcmToOpus.h */,
+				B66830CE2AE094D0006D3AE7 /* RCTOpusToWav.h */,
+				B66830CF2AE0951C006D3AE7 /* RCTOpusToWav.mm */,
+				B66830EC2AE24B81006D3AE7 /* RCTPcmToOpus.mm */,
+				B66830EF2AE25987006D3AE7 /* OpusCodec.cpp */,
+				B66830F02AE25987006D3AE7 /* OpusCodec.h */,
+				B6B4A0772AE40BF600532C0F /* RCTOpusCodec.h */,
+				B6B4A0742AE40BE800532C0F /* RCTOpusCodec.mm */,
+				B6B4A08E2AE430E000532C0F /* RCTAudioDetection.h */,
+				B6B4A0862AE430D600532C0F /* RCTAudioDetection.mm */,
+			);
+			name = btspeech;
+			sourceTree = "<group>";
+		};
+		1CB5A576AB265835DDB949B4 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				7A5D80EA7B5B445D12232416 /* btspeech */,
+				C7B1477649B85A9A3911B6F8 /* btspeechTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E5B435A2AE27AD2001E1035 /* libs */,
+				B66830F62AE25B30006D3AE7 /* libopus.a */,
+				8E5B43582AE278C2001E1035 /* libopus.a */,
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				144AFCFC174E98A210B182B4 /* Pods_btspeech.framework */,
+				73017058FDFB90005C818915 /* Pods_btspeech_btspeechTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A5D80EA7B5B445D12232416 /* btspeech */ = {
+			isa = PBXGroup;
+			children = (
+				40EFFD02B5C23542733F486D /* ExpoModulesProvider.swift */,
+			);
+			name = btspeech;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B648248A2AE5307300048593 /* Opus.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				8E8DD5F72AEAFF3000F2E3B8 /* Config.xcconfig */,
+				13B07FAE1A68108700A75B9A /* btspeech */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* btspeechTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				1CB5A576AB265835DDB949B4 /* ExpoModulesProviders */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* btspeech.app */,
+				00E356EE1AD99517003FC87E /* btspeechTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B648248B2AE5307300048593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B64824932AE5307300048593 /* libopus.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B66830F42AE25A59006D3AE7 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				B66830F52AE25A8A006D3AE7 /* include */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		B66830F52AE25A8A006D3AE7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B66A811C2AED3CEF0046F2CB /* vad */ = {
+			isa = PBXGroup;
+			children = (
+				B66A81052AED3C860046F2CB /* ActivityDetector.cpp */,
+				B66A81002AED3C850046F2CB /* ActivityDetector.h */,
+				B66A81022AED3C850046F2CB /* ArrayUtils.cpp */,
+				B66A80FF2AED3C850046F2CB /* ArrayUtils.h */,
+				B66A80F62AED3C850046F2CB /* Complex.cpp */,
+				B66A80FD2AED3C850046F2CB /* Complex.h */,
+				B66A80FE2AED3C850046F2CB /* Enumerations.h */,
+				B66A81012AED3C850046F2CB /* EnvelopeDetector.cpp */,
+				B66A80F82AED3C850046F2CB /* EnvelopeDetector.h */,
+				B66A80F42AED3C850046F2CB /* IirFilter.cpp */,
+				B66A80F12AED3C850046F2CB /* IirFilter.h */,
+				B66A80FA2AED3C850046F2CB /* IirFilterCoefficients.h */,
+				B66A80F02AED3C850046F2CB /* IirFilterDesignFisher.cpp */,
+				B66A80F32AED3C850046F2CB /* IirFilterDesignFisher.h */,
+				B66A81032AED3C850046F2CB /* IntArray.cpp */,
+				B66A80FC2AED3C850046F2CB /* IntArray.h */,
+				B66A80F52AED3C850046F2CB /* PolesAndZeros.cpp */,
+				B66A81042AED3C850046F2CB /* PolesAndZeros.h */,
+				B66A80FB2AED3C850046F2CB /* PolynomialUtils.cpp */,
+				B66A80F92AED3C850046F2CB /* PolynomialUtils.h */,
+				B66A80F22AED3C850046F2CB /* VoiceActivityDetection.cpp */,
+				B66A80F72AED3C850046F2CB /* VoiceActivityDetection.h */,
+			);
+			path = vad;
+			sourceTree = "<group>";
+		};
+		B6766FCF2AFFA24E001B8D3E /* voice-activity-detection */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FD02AFFA24E001B8D3E /* application-layer */,
+				B6766FD32AFFA24E001B8D3E /* adapters */,
+				B6766FF42AFFA24E001B8D3E /* domain */,
+			);
+			path = "voice-activity-detection";
+			sourceTree = "<group>";
+		};
+		B6766FD02AFFA24E001B8D3E /* application-layer */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FD12AFFA24E001B8D3E /* DetectVoiceActivityUseCase.cpp */,
+				B6766FD22AFFA24E001B8D3E /* DetectVoiceActivityUseCase.h */,
+			);
+			path = "application-layer";
+			sourceTree = "<group>";
+		};
+		B6766FD32AFFA24E001B8D3E /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FD42AFFA24E001B8D3E /* libfvad-impl */,
+				B6766FF12AFFA24E001B8D3E /* opus-vad-impl */,
+			);
+			path = adapters;
+			sourceTree = "<group>";
+		};
+		B6766FD42AFFA24E001B8D3E /* libfvad-impl */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FD52AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithLibfVad.h */,
+				B6766FD62AFFA24E001B8D3E /* libfvad */,
+				B6766FF02AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithLibfVad.cpp */,
+			);
+			path = "libfvad-impl";
+			sourceTree = "<group>";
+		};
+		B6766FD62AFFA24E001B8D3E /* libfvad */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FD72AFFA24E001B8D3E /* include */,
+				B6766FD92AFFA24E001B8D3E /* src */,
+			);
+			path = libfvad;
+			sourceTree = "<group>";
+		};
+		B6766FD72AFFA24E001B8D3E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FD82AFFA24E001B8D3E /* fvad.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B6766FD92AFFA24E001B8D3E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FDA2AFFA24E001B8D3E /* fvad.cpp */,
+				B6766FDB2AFFA24E001B8D3E /* common.h */,
+				B6766FDC2AFFA24E001B8D3E /* signal_processing */,
+				B6766FE72AFFA24E001B8D3E /* vad */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B6766FDC2AFFA24E001B8D3E /* signal_processing */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FDD2AFFA24E001B8D3E /* resample_48khz.cpp */,
+				B6766FDE2AFFA24E001B8D3E /* signal_processing_library.h */,
+				B6766FDF2AFFA24E001B8D3E /* resample_fractional.cpp */,
+				B6766FE02AFFA24E001B8D3E /* spl_inl.h */,
+				B6766FE12AFFA24E001B8D3E /* division_operations.cpp */,
+				B6766FE22AFFA24E001B8D3E /* resample_by_2_internal.h */,
+				B6766FE32AFFA24E001B8D3E /* energy.cpp */,
+				B6766FE42AFFA24E001B8D3E /* spl_inl.cpp */,
+				B6766FE52AFFA24E001B8D3E /* get_scaling_square.cpp */,
+				B6766FE62AFFA24E001B8D3E /* resample_by_2_internal.cpp */,
+			);
+			path = signal_processing;
+			sourceTree = "<group>";
+		};
+		B6766FE72AFFA24E001B8D3E /* vad */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FE82AFFA24E001B8D3E /* vad_core.h */,
+				B6766FE92AFFA24E001B8D3E /* vad_core.cpp */,
+				B6766FEA2AFFA24E001B8D3E /* vad_gmm.h */,
+				B6766FEB2AFFA24E001B8D3E /* vad_gmm.cpp */,
+				B6766FEC2AFFA24E001B8D3E /* vad_sp.h */,
+				B6766FED2AFFA24E001B8D3E /* vad_sp.cpp */,
+				B6766FEE2AFFA24E001B8D3E /* vad_filterbank.h */,
+				B6766FEF2AFFA24E001B8D3E /* vad_filterbank.cpp */,
+			);
+			path = vad;
+			sourceTree = "<group>";
+		};
+		B6766FF12AFFA24E001B8D3E /* opus-vad-impl */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FF22AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithOpusVad.h */,
+				B6766FF32AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithOpusVad.cpp */,
+			);
+			path = "opus-vad-impl";
+			sourceTree = "<group>";
+		};
+		B6766FF42AFFA24E001B8D3E /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				B6766FF52AFFA24E001B8D3E /* DetectVoiceActivityDomainService.h */,
+				B6766FF62AFFA24E001B8D3E /* VoiceActivity.h */,
+				B6766FF72AFFA24E001B8D3E /* VoiceActivity.cpp */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6107C12DEF0150327F58CDE4 /* Pods-btspeech.debug.xcconfig */,
+				FC38B46FCA9DDFCF5457E7C5 /* Pods-btspeech.release.xcconfig */,
+				49D188B73A021AAEEC85680E /* Pods-btspeech-btspeechTests.debug.xcconfig */,
+				D8760E582B58BC0C55F882D7 /* Pods-btspeech-btspeechTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7B1477649B85A9A3911B6F8 /* btspeechTests */ = {
+			isa = PBXGroup;
+			children = (
+				B777F66D208ED80C7428B25E /* ExpoModulesProvider.swift */,
+			);
+			name = btspeechTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* btspeechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "btspeechTests" */;
+			buildPhases = (
+				AD261CF2768FCA8A297C93A8 /* [CP] Check Pods Manifest.lock */,
+				96CDCBAFFA33C5B6E063C36C /* [Expo] Configure project */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				CE38401AEFEAA45C4805506C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = btspeechTests;
+			productName = btspeechTests;
+			productReference = 00E356EE1AD99517003FC87E /* btspeechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* btspeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "btspeech" */;
+			buildPhases = (
+				812C7FF4127D1D6B0045E54D /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				881D80F49D420CB6E669C757 /* [Expo] Configure project */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				AF62D6C0384933B62042B3CF /* [CP] Copy Pods Resources */,
+				3CD0B769D42C84D0BB176A29 /* [CP-User] [RNFB] Core Configuration */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = btspeech;
+			productName = btspeech;
+			productReference = 13B07F961A680F5B00A75B9A /* btspeech.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "btspeech" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B648248B2AE5307300048593 /* Products */;
+					ProjectRef = B648248A2AE5307300048593 /* Opus.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* btspeech */,
+				00E356ED1AD99517003FC87E /* btspeechTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B64824932AE5307300048593 /* libopus.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libopus.a;
+			remoteRef = B64824922AE5307300048593 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8DD5F82AEAFF3000F2E3B8 /* Config.xcconfig in Resources */,
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E6AEFBFC2AAF477F003F2785 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		3CD0B769D42C84D0BB176A29 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		812C7FF4127D1D6B0045E54D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btspeech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		881D80F49D420CB6E669C757 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-btspeech/expo-configure-project.sh\"\n";
+		};
+		96CDCBAFFA33C5B6E063C36C /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-btspeech-btspeechTests/expo-configure-project.sh\"\n";
+		};
+		AD261CF2768FCA8A297C93A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-btspeech-btspeechTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF62D6C0384933B62042B3CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-btspeech/Pods-btspeech-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-btspeech/Pods-btspeech-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-btspeech/Pods-btspeech-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE38401AEFEAA45C4805506C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-btspeech-btspeechTests/Pods-btspeech-btspeechTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-btspeech-btspeechTests/Pods-btspeech-btspeechTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-btspeech-btspeechTests/Pods-btspeech-btspeechTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* btspeechTests.m in Sources */,
+				B6B4A0882AE430D600532C0F /* RCTAudioDetection.mm in Sources */,
+				B66830D12AE0951C006D3AE7 /* RCTOpusToWav.mm in Sources */,
+				B66830EE2AE24B81006D3AE7 /* RCTPcmToOpus.mm in Sources */,
+				B6B4A0762AE40BE800532C0F /* RCTOpusCodec.mm in Sources */,
+				B66830F22AE25987006D3AE7 /* OpusCodec.cpp in Sources */,
+				63EAE77EA2E284828FC4252D /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B66A81062AED3C860046F2CB /* IirFilterDesignFisher.cpp in Sources */,
+				B67670042AFFA24E001B8D3E /* get_scaling_square.cpp in Sources */,
+				B66A81072AED3C860046F2CB /* IirFilter.h in Sources */,
+				B6766FFF2AFFA24E001B8D3E /* resample_48khz.cpp in Sources */,
+				B67670082AFFA24E001B8D3E /* vad_sp.cpp in Sources */,
+				B67670002AFFA24E001B8D3E /* resample_fractional.cpp in Sources */,
+				B67670072AFFA24E001B8D3E /* vad_gmm.cpp in Sources */,
+				B6766FFD2AFFA24E001B8D3E /* DetectVoiceActivityUseCase.cpp in Sources */,
+				B66A81082AED3C860046F2CB /* VoiceActivityDetection.cpp in Sources */,
+				B66A81092AED3C860046F2CB /* IirFilterDesignFisher.h in Sources */,
+				B67670062AFFA24E001B8D3E /* vad_core.cpp in Sources */,
+				B66A810A2AED3C860046F2CB /* IirFilter.cpp in Sources */,
+				B66A810B2AED3C860046F2CB /* PolesAndZeros.cpp in Sources */,
+				B66A810C2AED3C860046F2CB /* Complex.cpp in Sources */,
+				B66A810D2AED3C860046F2CB /* VoiceActivityDetection.h in Sources */,
+				B66A810E2AED3C860046F2CB /* EnvelopeDetector.h in Sources */,
+				B66A810F2AED3C860046F2CB /* PolynomialUtils.h in Sources */,
+				B67670022AFFA24E001B8D3E /* energy.cpp in Sources */,
+				B66A81102AED3C860046F2CB /* IirFilterCoefficients.h in Sources */,
+				B676700C2AFFA24E001B8D3E /* VoiceActivity.cpp in Sources */,
+				B66A81112AED3C860046F2CB /* PolynomialUtils.cpp in Sources */,
+				B66A81122AED3C860046F2CB /* IntArray.h in Sources */,
+				B66A81132AED3C860046F2CB /* Complex.h in Sources */,
+				B66A81142AED3C860046F2CB /* Enumerations.h in Sources */,
+				B66A81152AED3C860046F2CB /* ArrayUtils.h in Sources */,
+				B66A81162AED3C860046F2CB /* ActivityDetector.h in Sources */,
+				B676700A2AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithLibfVad.cpp in Sources */,
+				B66A81172AED3C860046F2CB /* EnvelopeDetector.cpp in Sources */,
+				B66A81182AED3C860046F2CB /* ArrayUtils.cpp in Sources */,
+				B66A81192AED3C860046F2CB /* IntArray.cpp in Sources */,
+				B67670052AFFA24E001B8D3E /* resample_by_2_internal.cpp in Sources */,
+				B67670092AFFA24E001B8D3E /* vad_filterbank.cpp in Sources */,
+				B66A811A2AED3C860046F2CB /* PolesAndZeros.h in Sources */,
+				B66A811B2AED3C860046F2CB /* ActivityDetector.cpp in Sources */,
+				B6B4A0872AE430D600532C0F /* RCTAudioDetection.mm in Sources */,
+				B66830F12AE25987006D3AE7 /* OpusCodec.cpp in Sources */,
+				B67670012AFFA24E001B8D3E /* division_operations.cpp in Sources */,
+				B676700B2AFFA24E001B8D3E /* DetectVoiceActivityDomainServiceWithOpusVad.cpp in Sources */,
+				B66830ED2AE24B81006D3AE7 /* RCTPcmToOpus.mm in Sources */,
+				B6766FFE2AFFA24E001B8D3E /* fvad.cpp in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				B6B4A0752AE40BE800532C0F /* RCTOpusCodec.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				1013A5E48A4CB83EBF3A64FC /* ExpoModulesProvider.swift in Sources */,
+				B67670032AFFA24E001B8D3E /* spl_inl.cpp in Sources */,
+				B66830D02AE0951C006D3AE7 /* RCTOpusToWav.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* btspeech */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D188B73A021AAEEC85680E /* Pods-btspeech-btspeechTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = btspeechTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/btspeech.app/btspeech";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8760E582B58BC0C55F882D7 /* Pods-btspeech-btspeechTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = btspeechTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/btspeech.app/btspeech";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6107C12DEF0150327F58CDE4 /* Pods-btspeech.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = btspeech/btspeech.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LVFQHCA44;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = btspeech/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = My2XL;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/Debug-iphoneos",
+					"$(PROJECT_DIR)/libs/Debug-iphoneos",
+				);
+				MARKETING_VERSION = 2.15.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.d1srupt1ve.2xl;
+				PRODUCT_NAME = btspeech;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC38B46FCA9DDFCF5457E7C5 /* Pods-btspeech.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = btspeech/btspeech.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LVFQHCA44;
+				INFOPLIST_FILE = btspeech/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = My2XL;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/Debug-iphoneos",
+					"$(PROJECT_DIR)/libs/Debug-iphoneos",
+				);
+				MARKETING_VERSION = 2.15.3;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.d1srupt1ve.2xl;
+				PRODUCT_NAME = btspeech;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8DD5F72AEAFF3000F2E3B8 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8DD5F72AEAFF3000F2E3B8 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon/ReactCommon.framework/Headers/react/nativemodule/core",
+					"${PODS_CONFIGURATION_BUILD_DIR}/ReactCommon-Samples/ReactCommon_Samples.framework/Headers/platform/ios",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-NativeModulesApple/React_NativeModulesApple.framework/Headers",
+					"${PODS_CONFIGURATION_BUILD_DIR}/React-graphics/React_graphics.framework/Headers/react/renderer/graphics/platform/ios",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "btspeechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "btspeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "btspeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

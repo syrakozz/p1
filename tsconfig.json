@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "$components": ["./src/components/index.ts"],
+      "$layout": ["./src/layout/index.ts"],
+      "$hooks": ["./src/hooks/index.ts"]
+    }
+  }
+}

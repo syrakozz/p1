@@ -1,0 +1,194 @@
+{
+  "project_info": {
+    "project_number": "1079695387518",
+    "project_id": "prj-d1s-sandbox",
+    "storage_bucket": "prj-d1s-sandbox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079695387518:android:20061fefc29a4fbc03212f",
+        "android_client_info": {
+          "package_name": "com.d1srupt1ve.magical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079695387518-90em3k6ohv0mkoc32ah475flqrel4hnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.d1srupt1ve.magical",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1079695387518-qjskstmijl11tej7i62caji2a4s2nlt3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.d1srupt1ve.magical",
+            "certificate_hash": "40df2ec60fb1c37b1478a0179c5d732f974b8a0f"
+          }
+        },
+        {
+          "client_id": "1079695387518-c5v5h7i21qvrocpkd6ufl2obaba33505.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjMkEqIEeOO_S7ef5rcrXjfjKjqPIGG9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079695387518-47gbplllgcrq3kpf47tgrg10p9djjcfv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1079695387518-1hph22it6p2gvado4lvq6k06otp4vuut.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.d1srupt1ve.sandbox"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079695387518:android:edd193b7208cfe8003212f",
+        "android_client_info": {
+          "package_name": "com.d1srupt1ve.my2xl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079695387518-c5v5h7i21qvrocpkd6ufl2obaba33505.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjMkEqIEeOO_S7ef5rcrXjfjKjqPIGG9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079695387518-47gbplllgcrq3kpf47tgrg10p9djjcfv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1079695387518-1hph22it6p2gvado4lvq6k06otp4vuut.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.d1srupt1ve.sandbox"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079695387518:android:d81b5fb6f3f532e003212f",
+        "android_client_info": {
+          "package_name": "com.d1srupt1ve.twoxl_dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079695387518-op5o3fap3off2n6m6o6ioqhfoc07ncg5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.d1srupt1ve.twoxl_dev",
+            "certificate_hash": "40df2ec60fb1c37b1478a0179c5d732f974b8a0f"
+          }
+        },
+        {
+          "client_id": "1079695387518-sifdcdcn06mc5qijo6vlu1shejup3rr8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.d1srupt1ve.twoxl_dev",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1079695387518-c5v5h7i21qvrocpkd6ufl2obaba33505.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjMkEqIEeOO_S7ef5rcrXjfjKjqPIGG9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079695387518-47gbplllgcrq3kpf47tgrg10p9djjcfv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1079695387518-1hph22it6p2gvado4lvq6k06otp4vuut.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.d1srupt1ve.sandbox"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079695387518:android:01d6d6336547ae4703212f",
+        "android_client_info": {
+          "package_name": "com.d1srupt1ve.twoxl_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079695387518-u3unmtumpghi78ij6mrn8h9tgoa6blkc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.d1srupt1ve.twoxl_test",
+            "certificate_hash": "b11f587f69accbca62ff3810d25545c57558e821"
+          }
+        },
+        {
+          "client_id": "1079695387518-c5v5h7i21qvrocpkd6ufl2obaba33505.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjMkEqIEeOO_S7ef5rcrXjfjKjqPIGG9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079695387518-47gbplllgcrq3kpf47tgrg10p9djjcfv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1079695387518-1hph22it6p2gvado4lvq6k06otp4vuut.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.d1srupt1ve.sandbox"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
